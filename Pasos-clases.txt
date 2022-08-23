@@ -1,0 +1,19 @@
+SIEMPRE PERO SIEMPRE, MANTENEMOS PRENDIDO EL SERVIDOR DE NODE
+
+Primero que nada, creamos todo este directorio sin el sw.js
+
+Luego, explicamos porque lo creamos y generamos el código de enlace para los eventos fetch
+
+Despues, limpiamos la cache del buscador y la desactivamos de la pestaña de red
+
+Después nos fijamos el estado de ejecución y apretamos, SKIPWATING que está en la pestaña service workerss
+
+________________________________________________________________________
+
+Despues, instalamos la extension o la copian y pegan de la mia, y pasamos a false:
+
+curly, strict, esversion lo ponemos en la 6
+
+________________________________________________________________________________
+
+Vamos y vemos los resultados en nuestro buscador de como el service worker impide el acceso a los estilos, todo lo demás pasa.
