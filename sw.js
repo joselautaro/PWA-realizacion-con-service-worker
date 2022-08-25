@@ -10,12 +10,15 @@ self.addEventListener('fetch' , event => {
 
     // Manera de controlar si hay un error en la petición
 
-
+    // MANERA COMPLEJA
         // const resp = fetch(event.request)
         // IMPORTANTE, PARA HACER ESTE ALGORITMO, CAMBIAR LA IMAGEN A MAIN-2.JPG
         // .then(resp => {
         //     return resp.ok ? resp : fetch('img/main.jpg')
         // });
+        // ______________________________________________
+        
+    // MANERA SIMPLE 
         // event.respondWith(fetch(event.request)
         // .then(resp => {
         //     if(resp.ok){
