@@ -1,6 +1,32 @@
 self.addEventListener('fetch' , event => {
 
-    if(event.request.url.includes('img/main.jpg')){
+    event.respondWith(fetch(event.request));
+
+    // _____________________________________________
+
+    
+    
+})
+
+    // Manera de controlar si hay un error en la petición
+
+
+        // const resp = fetch(event.request)
+        // IMPORTANTE, PARA HACER ESTE ALGORITMO, CAMBIAR LA IMAGEN A MAIN-2.JPG
+        // .then(resp => {
+        //     return resp.ok ? resp : fetch('img/main.jpg')
+        // });
+        // event.respondWith(fetch(event.request)
+        // .then(resp => {
+        //     if(resp.ok){
+            // return resp;
+        //})else{
+            // return fetch('img/main.jpg')}
+        // })
+            
+        // ________________________________________________
+
+    // if(event.request.url.includes('img/main.jpg')){
         // console.log(event.request.url)
 
         // Lo hacemos en una sola linea
@@ -13,12 +39,13 @@ self.addEventListener('fetch' , event => {
 
         // Otra manera de obtener la respuesta es
         // Declarando una variable llamada resp por ejemplo
-        let resp = fetch ('img/main-patas-arriba.jpg')
+        // let resp = fetch ('img/main-patas-arriba.jpg')
         // y le mandamos la variable anterior como parámetro al fetch
-        event.respondWith(resp)
+        // event.respondWith(resp)
 
-    }
-})
+    // }
+
+    // _______________________________________________
     
     // if(event.request.url.includes('style.css')) {
     //     console.log(event.request.url)
@@ -33,6 +60,7 @@ self.addEventListener('fetch' , event => {
 // ______________________________________________
 
         // Manera de cambiar interceptar peticion del y cambiar los estilos de nuestro html
+        // if(event.request.url.includes('style.css')) {
 
         //     let respuesta = new Response (`
         //         body{
